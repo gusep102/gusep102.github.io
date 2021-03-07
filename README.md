@@ -1,2 +1,3 @@
 # github-pages-site
- location for website files
+ 
+ Files for personal blog [website](http://gperalta102.github.io).
