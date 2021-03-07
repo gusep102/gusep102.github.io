@@ -1,1 +1,1 @@
-Sitemap: https://www.gustavoeperalta.com/sitemap.xml
+Sitemap: gustavoeperalta.com/sitemap.xml
