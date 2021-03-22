@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/projects/android-music-player/</loc>
-<lastmod>2021-03-22T02:28:09-04:00</lastmod>
+<loc>https://gusperalta.com/projects/android-music-player/</loc>
+<lastmod>2021-03-22T04:57:34-04:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/projects/anime-text-generator/</loc>
-<lastmod>2021-03-22T02:28:09-04:00</lastmod>
+<loc>https://gusperalta.com/projects/anime-text-generator/</loc>
+<lastmod>2021-03-22T04:57:34-04:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/about/</loc>
+<loc>https://gusperalta.com/about/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>https://gusperalta.com/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/projects/</loc>
+<loc>https://gusperalta.com/projects/</loc>
 </url>
 </urlset>
