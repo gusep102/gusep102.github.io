@@ -2,11 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://gusperalta.com/projects/android-music-player/</loc>
-<lastmod>2021-04-03T23:30:04-04:00</lastmod>
+<lastmod>2021-04-15T04:29:45-04:00</lastmod>
 </url>
 <url>
 <loc>https://gusperalta.com/projects/anime-text-generator/</loc>
-<lastmod>2021-04-03T23:30:04-04:00</lastmod>
+<lastmod>2021-04-15T04:29:45-04:00</lastmod>
+</url>
+<url>
+<loc>https://gusperalta.com/projects/software-engineering-project-dynamic-website/</loc>
+<lastmod>2021-04-15T04:29:45-04:00</lastmod>
 </url>
 <url>
 <loc>https://gusperalta.com/about/</loc>
