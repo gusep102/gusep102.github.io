@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://gusperalta.com/projects/android-music-player/</loc>
-<lastmod>2021-05-17T12:41:20-04:00</lastmod>
+<loc>/2020-02-26-flake-it-till-you-make-it/</loc>
+<lastmod>2020-02-26T00:00:00-08:00</lastmod>
 </url>
 <url>
-<loc>https://gusperalta.com/projects/anime-text-generator/</loc>
-<lastmod>2021-05-17T12:41:20-04:00</lastmod>
+<loc>/2020-02-28-sample-markdown/</loc>
+<lastmod>2020-02-28T00:00:00-08:00</lastmod>
 </url>
 <url>
-<loc>https://gusperalta.com/projects/software-engineering-project-dynamic-website/</loc>
-<lastmod>2021-05-17T12:41:20-04:00</lastmod>
+<loc>/aboutme-backup/</loc>
 </url>
 <url>
-<loc>https://gusperalta.com/about/</loc>
+<loc>/aboutme/</loc>
 </url>
 <url>
-<loc>https://gusperalta.com/contactme/</loc>
+<loc>/</loc>
 </url>
 <url>
-<loc>https://gusperalta.com/</loc>
-</url>
-<url>
-<loc>https://gusperalta.com/projects/</loc>
+<loc>/tags/</loc>
 </url>
 </urlset>
