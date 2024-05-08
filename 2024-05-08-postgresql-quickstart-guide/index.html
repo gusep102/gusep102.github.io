@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 6.0.1 | Copyright Dean Attali 2023 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  <title>PostgreSQL Quickstart Guide</title>
+
+  
+  
+  <meta name="author" content="Gus">
+  
+
+  <meta name="description" content="PostgreSQL Quickstart Guide Install PostgreSQL server on Ubuntu (22.04) To install install the packages with the following commands $ sudo apt install postgresql postgresql-contrib Roles and Databases Default postgres uses roles to handle authentication and authorization similar to users and groups. The installation created a user account called postgres as...">
+
+  
+
+  
+  <meta name="keywords" content="Gustavo Peralta Amazon, Gustavo Peralta Support Engineer, Gustavo Peralta Cal Poly Pomona">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="Hi, I'm Gus">
+  <meta property="og:title" content="PostgreSQL Quickstart Guide">
+  <meta property="og:description" content="PostgreSQL Quickstart Guide Install PostgreSQL server on Ubuntu (22.04) To install install the packages with the following commands $ sudo apt install postgresql postgresql-contrib Roles and Databases Default postgres uses roles to handle authentication and authorization similar to users and groups. The installation created a user account called postgres as...">
+
+  
+  <meta property="og:image" content="/assets/img/avatar.jpg">
+  
+
+  
+  <meta property="og:type" content="article">
+  
+  <meta property="og:article:author" content="Gus">
+  
+  <meta property="og:article:published_time" content="2024-05-08T16:44:00-07:00">
+  <meta property="og:url" content="/2024-05-08-postgresql-quickstart-guide/">
+  <link rel="canonical" href="/2024-05-08-postgresql-quickstart-guide/">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+
+  <meta property="twitter:title" content="PostgreSQL Quickstart Guide">
+  <meta property="twitter:description" content="PostgreSQL Quickstart Guide Install PostgreSQL server on Ubuntu (22.04) To install install the packages with the following commands $ sudo apt install postgresql postgresql-contrib Roles and Databases Default postgres uses roles to handle authentication and authorization similar to users and groups. The installation created a user account called postgres as...">
+
+  
+  <meta name="twitter:image" content="/assets/img/avatar.jpg">
+  
+
+  
+
+
+  
+
+  
+
+</head>
+
+
+<body>
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="/">Hi, I'm Gus</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutme">About Me</a>
+          </li></ul>
+  </div>
+
+  
+
+  
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="/">
+          <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/avatar.jpg" />
+        </a>
+      </div>
+    </div>
+  
+
+</nav>
+
+
+
+
+
+  
+
+
+
+<header class="header-section ">
+<div class="intro-header ">
+  
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="post-heading">
+          <h1>PostgreSQL Quickstart Guide</h1>
+          
+          
+           
+            
+            <span class="post-meta">Posted on May 8, 2024</span>
+            
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+
+</header>
+
+
+<main class=" container-md ">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+
+      
+
+      
+
+      <div class="blog-post">
+        <h1 id="postgresql-quickstart-guide">PostgreSQL Quickstart Guide</h1>
+
+<h2 id="install-postgresql-server-on-ubuntu-2204">Install PostgreSQL server on Ubuntu (22.04)</h2>
+<p>To install install the packages with the following commands</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install postgresql postgresql-contrib
+</code></pre></div></div>
+
+<h2 id="roles-and-databases">Roles and Databases</h2>
+<p>Default postgres uses roles to handle authentication and authorization similar to users and groups.</p>
+
+<p>The installation created a user account called postgres as default. To use this account to access postgres you can run the following command to switch over</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo -i -u postgres
+</code></pre></div></div>
+
+<p>After switching over to the account you can access the postgres prompt with the following command</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ psql
+</code></pre></div></div>
+
+<p>To quit the prompt use the command</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\q
+</code></pre></div></div>
+
+<h2 id="creating-a-new-role">Creating a New Role</h2>
+<p>Using the default postgres account, you can create new roles. Log into the postgres account.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo -i -u postgres
+</code></pre></div></div>
+
+<p>After switching over run the following command and follow the prompts to create a new role</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ createuser --interactive
+</code></pre></div></div>
+<p>output:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter name of role to add: rolename
+Shall the new role be a superuser? (y/n) y
+</code></pre></div></div>
+
+<p>To login with ident based authentication a linux user with the same name as the created role must exist. To create a new user in linux you can use the following command:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo adduser username
+</code></pre></div></div>
+
+<h2 id="create-a-new-database">Create a New Database</h2>
+<p>By default postgres authentication system assumes any role used to log in has a database with the same name that it is able to access.</p>
+
+<p>This means by default if you create a role by the name of “erick” then it would expect a database called “erick” to log into by default.</p>
+
+<p>To create a database first login to the default postgres account:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo -i -u postgres
+</code></pre></div></div>
+
+<p>After the switch over run the create database command and name it the same as the previously created role:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ createdb rolename
+</code></pre></div></div>
+
+<h2 id="access-postgres-prompt-with-the-new-role">Access Postgres Prompt with the New Role</h2>
+<p>Switch over to the user that was created earlier that has a matching role.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo -u username
+</code></pre></div></div>
+
+<p>then</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ psql
+</code></pre></div></div>
+
+<p>Note: If you would like to connect to a different database than the default user database, you can use the following command to specify the database:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ psql -d databaseName
+</code></pre></div></div>
+
+<h2 id="confirm-current-connection-information">Confirm Current Connection Information</h2>
+<p>Run the following command to see the current database connection information</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rolename=# \conninfo
+</code></pre></div></div>
+
+
+      </div>
+
+      
+        <div class="blog-tags">
+          <span>Tags:</span>
+          
+            <a href="/tags#postgresql">postgresql</a>
+          
+            <a href="/tags#databases">databases</a>
+          
+            <a href="/tags#linux">linux</a>
+          
+            <a href="/tags#sql">sql</a>
+          
+            <a href="/tags#psql">psql</a>
+          
+            <a href="/tags#ubuntu">ubuntu</a>
+          
+        </div>
+      
+
+      
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+<section id = "social-share-section">
+  <span class="sr-only">Share: </span>
+
+  
+    <a href="https://twitter.com/intent/tweet?text=PostgreSQL+Quickstart+Guide&url=%2F2024-05-08-postgresql-quickstart-guide%2F"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  
+
+  
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2024-05-08-postgresql-quickstart-guide%2F"
+      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fab fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  
+
+  
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2F2024-05-08-postgresql-quickstart-guide%2F"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  
+
+  
+
+  
+
+</section>
+
+
+
+      
+
+      <ul class="pagination blog-pager">
+        
+        <li class="page-item previous">
+          <a class="page-link" href="/2024-05-07-create-a-post-with-jekyll/" data-toggle="tooltip" data-placement="top" title="Create a Post with Jekyll">
+            <i class="fas fa-arrow-left" alt="Previous Post"></i>
+            <span class="d-none d-sm-inline-block">Previous Post</span>
+          </a>
+        </li>
+        
+        
+      </ul>
+      
+  
+  
+  
+
+  
+
+
+  
+
+  
+
+
+
+    </div>
+  </div>
+</main>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      
+<ul class="list-inline text-center footer-links"><li class="list-inline-item">
+    <a href="https://github.com/gusep102" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://linkedin.com/in/gustavoeperalta" title="LinkedIn">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">LinkedIn</span>
+   </a>
+  </li></ul>
+
+      
+      <p class="copyright text-muted">
+      
+        Gus
+        &nbsp;&bull;&nbsp;
+      
+      2024
+
+      
+        &nbsp;&bull;&nbsp;
+        <span class="author-site">
+          <a href="/">gusperalta.com</a>
+        </span>
+      
+
+      
+
+      
+
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -10,6 +10,17 @@
     
     
       <item>
+        <title>PostgreSQL Quickstart Guide</title>
+        <description>
+          
+          PostgreSQL Quickstart Guide Install PostgreSQL server on Ubuntu (22.04) To install install the packages with the following commands $ sudo apt install postgresql postgresql-contrib Roles and Databases Default postgres uses roles to handle authentication and authorization similar to users and groups. The installation created a user account called postgres as...
+        </description>
+        <pubDate>Wed, 08 May 2024 16:44:00 -0700</pubDate>
+        <link>/2024-05-08-postgresql-quickstart-guide/</link>
+        <guid isPermaLink="true">/2024-05-08-postgresql-quickstart-guide/</guid>
+      </item>
+    
+      <item>
         <title>Create a Post with Jekyll</title>
         <description>
           How to create a post through the terminal while using Jekyll. - 
