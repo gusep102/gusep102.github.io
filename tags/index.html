@@ -81,13 +81,13 @@
   <meta property="og:description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:&apos;,&apos; | sort -%} {%- for tag...">
 
   
-  <meta property="og:image" content="/assets/img/avatar.jpg">
+  <meta property="og:image" content="http://localhost:4000/assets/img/avatar.jpg">
   
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="/tags/">
-  <link rel="canonical" href="/tags/">
+  <meta property="og:url" content="http://localhost:4000/tags/">
+  <link rel="canonical" href="http://localhost:4000/tags/">
   
 
   
@@ -100,7 +100,7 @@
   <meta property="twitter:description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:&apos;,&apos; | sort -%} {%- for tag...">
 
   
-  <meta name="twitter:image" content="/assets/img/avatar.jpg">
+  <meta name="twitter:image" content="http://localhost:4000/assets/img/avatar.jpg">
   
 
   
@@ -117,7 +117,7 @@
   
 
 
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="/">Hi, I'm Gus</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="http://localhost:4000/">Hi, I'm Gus</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -136,7 +136,7 @@
   
     <div class="avatar-container">
       <div class="avatar-img-border">
-        <a href="/">
+        <a href="http://localhost:4000/">
           <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/avatar.jpg" />
         </a>
       </div>
@@ -182,7 +182,52 @@
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       
 
-      <div id="full-tags-list"></div>
+      <a href="#how to" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;how to&nbsp;(1)</a><a href="#jekyll" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;jekyll&nbsp;(1)</a><a href="#jekyll plugin" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;jekyll plugin&nbsp;(1)</a><a href="#mysql" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;mysql&nbsp;(1)</a><a href="#web development" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;web development&nbsp;(1)</a><div id="full-tags-list"><h2 id="how to" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;how to&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/2024-05-07-create-a-post-with-jekyll/">Create a Post with Jekyll</a>
+                <div class="entry-date">
+                    <time datetime="2024-05-07T18:39:00-07:00">May 7, 2024</time>
+                </div>
+            </div></div><h2 id="jekyll" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;jekyll&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/2024-05-07-create-a-post-with-jekyll/">Create a Post with Jekyll</a>
+                <div class="entry-date">
+                    <time datetime="2024-05-07T18:39:00-07:00">May 7, 2024</time>
+                </div>
+            </div></div><h2 id="jekyll plugin" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;jekyll plugin&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/2024-05-07-create-a-post-with-jekyll/">Create a Post with Jekyll</a>
+                <div class="entry-date">
+                    <time datetime="2024-05-07T18:39:00-07:00">May 7, 2024</time>
+                </div>
+            </div></div><h2 id="mysql" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;mysql&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/2024-05-07-mysql-basics/">mySQL Basics</a>
+                <div class="entry-date">
+                    <time datetime="2024-05-07T17:45:00-07:00">May 7, 2024</time>
+                </div>
+            </div></div><h2 id="web development" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;web development&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/2024-05-07-create-a-post-with-jekyll/">Create a Post with Jekyll</a>
+                <div class="entry-date">
+                    <time datetime="2024-05-07T18:39:00-07:00">May 7, 2024</time>
+                </div>
+            </div></div></div>
 
 
       
@@ -228,7 +273,7 @@
       
         &nbsp;&bull;&nbsp;
         <span class="author-site">
-          <a href="/">gusperalta.com</a>
+          <a href="http://localhost:4000/">gusperalta.com</a>
         </span>
       
 
