@@ -12,8 +12,8 @@
       <item>
         <title>PostgreSQL Quickstart Guide</title>
         <description>
-          
-          PostgreSQL Quickstart Guide Install PostgreSQL server on Ubuntu (22.04) To install install the packages with the following commands $ sudo apt install postgresql postgresql-contrib Roles and Databases Default postgres uses roles to handle authentication and authorization similar to users and groups. The installation created a user account called postgres as...
+          Install and configure PostgreSQL server on Ubuntu - 
+          Install PostgreSQL server on Ubuntu (22.04) To install install the packages with the following commands $ sudo apt install postgresql postgresql-contrib Roles and Databases Default postgres uses roles to handle authentication and authorization similar to users and groups. The installation created a user account called postgres as default. To use...
         </description>
         <pubDate>Wed, 08 May 2024 16:44:00 -0700</pubDate>
         <link>/2024-05-08-postgresql-quickstart-guide/</link>
@@ -32,10 +32,10 @@
       </item>
     
       <item>
-        <title>mySQL Basics</title>
+        <title>Overview of SQL and Tips</title>
         <description>
-          
-          Overview of SQL and Tips mySQL Syntax SQL statements are not case sensitive. This means the following would be considered the same. select * from table; SELECT * FROM table; Note, table names can be case sensitive depending on the OS of the server where the database is located. Since...
+          mySQL basics including format of statements and comments etc. - 
+          mySQL Syntax SQL statements are not case sensitive. This means the following would be considered the same. select * from table; SELECT * FROM table; Note, table names can be case sensitive depending on the OS of the server where the database is located. Since this information may not be...
         </description>
         <pubDate>Tue, 07 May 2024 17:45:00 -0700</pubDate>
         <link>/2024-05-07-mysql-basics/</link>
